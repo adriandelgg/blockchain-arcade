@@ -37,11 +37,11 @@ module.exports = {
 		excludeContracts: [],
 		src: './contracts'
 	},
-	contractSizer: {
-		alphaSort: true,
-		runOnCompile: true,
-		disambiguatePaths: false
-	},
+	// contractSizer: {
+	// 	alphaSort: true,
+	// 	runOnCompile: true,
+	// 	disambiguatePaths: false
+	// },
 	networks: {
 		// hardhat: {
 		// 	forking: {
@@ -96,15 +96,6 @@ module.exports = {
 		compilers: [
 			{
 				version: '0.8.7',
-				settings: {
-					optimizer: {
-						enabled: true,
-						runs: 200
-					}
-				}
-			},
-			{
-				version: '0.6.12',
 				settings: {
 					optimizer: {
 						enabled: true,

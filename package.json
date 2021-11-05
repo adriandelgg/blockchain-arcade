@@ -1,0 +1,16 @@
+{
+	"name": "ts-next-redux",
+	"version": "1.0.0",
+	"description": "A React/Next.ts, Redux Toolkit, Hardhat, & TypeChain template project.",
+	"repository": "https://github.com/adriandelgg/ts-next-hardhat-redux.git",
+	"author": "adriandelgg",
+	"license": "MIT",
+	"scripts": {
+		"dev": "concurrently \"cd ./hardhat && npx hardhat node\" \"cd ./frontend && npm run dev\"",
+		"hardhat": "cd ./hardhat && hh node",
+		"frontend": "cd ./frontend && npm run dev"
+	},
+	"devDependencies": {
+		"concurrently": "^6.2.1"
+	}
+}

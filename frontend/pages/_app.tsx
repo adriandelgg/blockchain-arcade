@@ -10,13 +10,13 @@ import { Provider } from 'react-redux';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<Provider store={store}>
-			<Web3Provider>
-				<Layout>
-					<Component {...pageProps} />
-				</Layout>
-			</Web3Provider>
-		</Provider>
+		// <Provider store={store}>
+		<Web3Provider>
+			<Layout>
+				<Component {...pageProps} />
+			</Layout>
+		</Web3Provider>
+		// </Provider>
 	);
 }
 

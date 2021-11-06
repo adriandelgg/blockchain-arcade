@@ -1,3 +1,4 @@
+import { shuffle } from 'lodash';
 export const cards = [
 	'/AC.jpg',
 	'/AD.jpg',
@@ -52,3 +53,5 @@ export const cards = [
 	'/QH.jpg',
 	'/QS.jpg'
 ];
+
+export const cardsShuffled = shuffle(cards);

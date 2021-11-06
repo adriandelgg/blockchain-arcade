@@ -1,6 +1,7 @@
-import { FlippedCard } from '@components/cards/FlippedCard';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+
+import { Cards } from '@components/cards/Cards';
 
 const Home: NextPage = () => {
 	return (
@@ -11,7 +12,7 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<main>
-				<FlippedCard />
+				<Cards />
 			</main>
 		</>
 	);

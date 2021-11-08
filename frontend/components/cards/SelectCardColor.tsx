@@ -3,16 +3,28 @@ interface Props {
 }
 
 export const SelectCardColor = ({ setCardColor }: Props) => {
+	function handleClick(e: React.MouseEvent<HTMLButtonElement>) {
+		setCardColor(e.currentTarget.value);
+	}
+
 	return (
-		<form>
-			<label htmlFor="card-colors">Choose a Card Color:</label>
-			<select name="cardColor" id="card-colors">
-				<option value="blue">Blue</option>
-				<option value="saab">Red</option>
-				<option value="mercedes">Green</option>
-				<option value="audi">Purple</option>
-				<option value="audi">Yellow</option>
-			</select>
-		</form>
+		<div>
+			<h3>Choose a Card Color:</h3>
+			<button value="blue" onClick={handleClick}>
+				Blue
+			</button>
+			<button value="green" onClick={handleClick}>
+				Green
+			</button>
+			<button value="purple" onClick={handleClick}>
+				Purple
+			</button>
+			<button value="red" onClick={handleClick}>
+				Red
+			</button>
+			<button value="yellow" onClick={handleClick}>
+				Yellow
+			</button>
+		</div>
 	);
 };

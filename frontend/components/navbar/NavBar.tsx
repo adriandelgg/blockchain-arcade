@@ -5,7 +5,7 @@ import { Web3Context } from 'context/Web3Context';
 import { ToastContainer } from 'react-toastify';
 import MetaMask from './MetaMask';
 import { useContext } from 'react';
-import DarkModeToggle from '@components/helpers/DarkModeToggle';
+import DarkModeToggle from 'components/helpers/DarkModeToggle';
 
 const NavBar = () => {
 	const { etherBalance, tokenBalance } = useContext(Web3Context);
